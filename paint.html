@@ -1,13 +1,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://cdn.rawgit.com/konvajs/konva/1.7.6/konva.min.js"></script>
     <script type = "text/javascript" src = "paint.js"></script>
   </head>
-  <body onload = "master()">
-    <div id = "shape_select">
-      <button id = "line">Line</button>
-      <button id = "rectangle">Rectangle</button>
-      <button id = "circle">Circle</button>
+  <body>
+    <div id = "toolbox">
+        <h3>Shapes</h3>
+        <button id = "line">Line</button>
+        <button id = "rectangle">Rectangle</button>
+        <button id = "circle">Circle</button>
+        <button id = "ellipse">Ellipse</button>
+        <button id = "dot">Point</button>
+        <!-- <button id = "polygon">Polygon</button> -->
+        <button id = "deselect_shape">Reset</button>
+        <h3>Colour</h3>
+        <button id = "red" style="background-color:red">Red</button>
+        <button id = "green" style="background-color:green">Green</button>
+        <button id = "blue" style="background-color:blue">Blue</button>
+        <button id = "cyan" style="background-color:cyan">Cyan</button>
+        <button id = "yellow" style="background-color:yellow">Yellow</button>
+        <button id="pink" style="background-color:pink">Pink</button>
+        <button id="deselect_color">Reset</button>
+        <h3>Paint</h3>
+        <button id = "red_paint" style="background-color:red">Red</button>
+        <button id = "green_paint" style="background-color:green">Green</button>
+        <button id = "blue_paint" style="background-color:blue">Blue</button>
+        <button id = "cyan_paint" style="background-color:cyan">Cyan</button>
+        <button id = "yellow_paint" style="background-color:yellow">Yellow</button>
+        <button id = "pink_paint" style="background-color:pink">Pink</button>
+        <button id="deselect_paint">Reset</button>
     </div>
     <div id = "draw_area"></div>
   </body>
